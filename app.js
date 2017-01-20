@@ -191,9 +191,7 @@ $('#next').click(function () {
         userLocation().then(function (data) {
             $.ajax({
                     url: 'https://api.darksky.net/forecast/789049a8218d7cb5b911b8e7252f7703/' + localStorage.getItem('latitude') + ',' + localStorage.getItem('longitude') + currDateTime,
-                dataType
-            :
-            'jsonp'
+                dataType: 'jsonp'
         }).
             done(function (data) {
                 setLocation(data);
@@ -204,6 +202,4 @@ $('#next').click(function () {
             });
         });
     }
-})
-
-//замість всановлення дати, її треба перезаписувати.
+});
