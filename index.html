@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Darksky</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="map" class="col-xs-12 col-sm-12 col-md-12"></div>
+        <div id="temp" class="col-xs-12 col-sm-12 col-md-12">
+            <div class="table-responsive">
+                <table id="myTable" class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <td colspan="2" align="left">Weather in your location</td>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="date" class="col-xs-12 col-sm-12 col-md-12">
+            <span>Current time: </span>
+            <div id="digitalWatch"></div>
+            <br>
+            <span class="day"></span>
+            <span class="month"></span>
+            <span class="year"></span>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <button id="previus" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    Previous day
+                </button>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <button id="next" type="button" class="btn btn-info">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="remove">Next day</span>
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 49.822063, lng: 24.006436},
+            zoom: 10
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIKsPQUxp--3OOY5i4UDl9BTy3VzYayOY&callback=initMap"
+        async defer></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

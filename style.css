@@ -1,0 +1,43 @@
+body {
+    background-color: #dde0eb;
+}
+
+#map {
+    height: 250px;
+}
+
+.row {
+    margin-top: 30px;
+    height: 150px;
+}
+
+thead {
+    font-weight: 600;
+}
+
+table {
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    color: #3c5a5b;
+}
+
+tbody tr td:first-child {
+    font-weight: 600;
+}
+
+#digitalWatch {
+    color: #3c5a5b;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#date span {
+    color: #3c5a5b;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+}
